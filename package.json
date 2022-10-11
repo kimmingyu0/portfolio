@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.5.0",
+    "gh-pages": "^4.0.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-icons": "^4.4.0",
@@ -39,5 +40,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage":"https://kimmingyu0.github.io/portfolio"
+  "homepage": "https://kimmingyu0.github.io/PORTFOLIO"
 }
