@@ -1,19 +1,42 @@
 import "./FormStyles.css";
 
-import React from "react";
+import React, { useRef } from "react";
 
-const Form = () => {
+const Form = (props) => {
+  const NameRef = useRef("");
+  const EmailRef = useRef("");
+  const TextRef = useRef("");
+
+  function submitHandler(event) {
+    event.preventDefault();
+    if (NameRef.current.value.trim().length === 0) {
+      alert('성함을 입력해주세요.');
+      return
+    } else if (EmailRef.current.value.trim().length === 0) {
+      alert('연락처를 입력해주세요.');
+      return;
+    } else {
+      alert('제출 되었습니다!');
+    }
+
+    const contact = {
+      name: NameRef.current.value,
+      email: EmailRef.current.value,
+      text: TextRef.current.value,
+    };
+
+    props.onAddContact(contact);
+  }
+
   return (
     <div className="form">
-      <form>
-        <label>Your Name</label>
-        <input type="text"></input>
-        <label>Email</label>
-        <input type="email"></input>
-        <label>Subject</label>
-        <input type="text"></input>
-        <label>Message</label>
-        <textarea row="6"placeholder="하실 말씀을 적어주세요"/>
+      <form onSubmit={submitHandler}>
+        <label>성함</label>
+        <input type="text" ref={NameRef} placeholder="성함을 작성해주세요"></input>
+        <label>연락처</label>
+        <input type="text" ref={EmailRef} placeholder="이메일 또는 전화번호를 작성해주세요"></input>
+        <label>남기실 말씀</label>
+        <textarea row="6" placeholder="남기실 말씀을 작성해주세요" ref={TextRef} />
         <button className="btn">저장</button>
       </form>
     </div>

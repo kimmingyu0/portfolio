@@ -18,3 +18,12 @@ form input, form textarea{
     border-color:  rgba(255,255,255,0.1);
     color: #f4f4f4;
 }
+
+form textarea{
+    height:300px;
+    resize:none;
+}
+
+@media screen and (max-width:640px) {
+    form textarea{height: 150px;}
+}

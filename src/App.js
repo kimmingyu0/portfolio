@@ -8,13 +8,29 @@ import Contact from "./routes/Contact";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
+
+  async function addContactHandler(event) {
+    const response = await fetch(
+      "https://react-http-6ede3-default-rtdb.firebaseio.com/contacts.json",
+      {
+        method: "POST",
+        body: JSON.stringify(event),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
+    const data = await response.json();
+    console.log(data);
+  }
+
   return (
     <>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/project" element={<Project />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element ={<Contact onAddContact={addContactHandler}/>} />
       </Routes>
     </>
   );
