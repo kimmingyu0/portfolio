@@ -1,6 +1,6 @@
 import "./FormStyles.css";
 
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 
 const Form = (props) => {
   const NameRef = useRef("");
@@ -9,6 +9,7 @@ const Form = (props) => {
 
   function submitHandler(event) {
     event.preventDefault();
+    
     if (NameRef.current.value.trim().length === 0) {
       alert('성함을 입력해주세요.');
       return
@@ -26,6 +27,8 @@ const Form = (props) => {
     };
 
     props.onAddContact(contact);
+    
+    window.location.reload();
   }
 
   return (

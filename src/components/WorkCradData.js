@@ -6,7 +6,7 @@ const ProjectCardData = [
     imgsrc: pro1,
     title: "Cosview",
     text: "HTML,CSS를 통한 첫 마크업 작업을 했던 프로젝트입니다.",
-    view: "https://kimmingyu0.github.io/portfolio.github.io/",
+    view: "https://kimmingyu0.github.io/PORTFOLIO.github.io/",
   },
   {
     imgsrc: pro2,
