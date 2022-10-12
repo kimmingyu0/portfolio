@@ -16,8 +16,6 @@ const Form = (props) => {
     } else if (EmailRef.current.value.trim().length === 0) {
       alert('연락처를 입력해주세요.');
       return;
-    } else {
-      alert('제출 되었습니다!');
     }
 
     const contact = {
@@ -27,8 +25,10 @@ const Form = (props) => {
     };
 
     props.onAddContact(contact);
-    
-    window.location.reload();
+
+    alert('제출 되었습니다!');
+    document.querySelector('.smbtn').classList.add('btn-light');
+    document.querySelector('.smbtn').disabled= true;
   }
 
   return (
@@ -40,7 +40,7 @@ const Form = (props) => {
         <input type="text" ref={EmailRef} placeholder="이메일 또는 전화번호를 작성해주세요"></input>
         <label>남기실 말씀</label>
         <textarea row="6" placeholder="남기실 말씀을 작성해주세요" ref={TextRef} />
-        <button className="btn">저장</button>
+        <button className="btn smbtn">저장</button>
       </form>
     </div>
   );
