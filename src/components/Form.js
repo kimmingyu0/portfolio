@@ -1,6 +1,6 @@
 import "./FormStyles.css";
 
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 
 const Form = (props) => {
   const NameRef = useRef("");
