@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.d70e8c06.css",
-    "main.js": "/static/js/main.8c8310d9.js",
-    "static/media/ChromeApp.png": "/static/media/ChromeApp.1d108c975c86845238ad.png",
-    "static/media/COSVIEW.png": "/static/media/COSVIEW.a25535b64358c5586f7f.png",
-    "static/media/MovieRanking.png": "/static/media/MovieRanking.7ffa806e96443f3ec836.png",
-    "static/media/intro-bg.jpg": "/static/media/intro-bg.cf2364827d8b8a98642e.jpg",
-    "static/media/react.png": "/static/media/react.7aa3e7438534a7686f56.png",
-    "static/media/java.png": "/static/media/java.7506ee0b6a3a7de68178.png",
-    "static/media/css3.png": "/static/media/css3.5721a3928fe43de6baf8.png",
-    "index.html": "/index.html",
-    "main.d70e8c06.css.map": "/static/css/main.d70e8c06.css.map",
-    "main.8c8310d9.js.map": "/static/js/main.8c8310d9.js.map"
+    "main.css": "/kmg-portfolio.com/static/css/main.d70e8c06.css",
+    "main.js": "/kmg-portfolio.com/static/js/main.be9325a5.js",
+    "static/media/ChromeApp.png": "/kmg-portfolio.com/static/media/ChromeApp.1d108c975c86845238ad.png",
+    "static/media/COSVIEW.png": "/kmg-portfolio.com/static/media/COSVIEW.a25535b64358c5586f7f.png",
+    "static/media/MovieRanking.png": "/kmg-portfolio.com/static/media/MovieRanking.7ffa806e96443f3ec836.png",
+    "static/media/intro-bg.jpg": "/kmg-portfolio.com/static/media/intro-bg.cf2364827d8b8a98642e.jpg",
+    "static/media/react.png": "/kmg-portfolio.com/static/media/react.7aa3e7438534a7686f56.png",
+    "static/media/java.png": "/kmg-portfolio.com/static/media/java.7506ee0b6a3a7de68178.png",
+    "static/media/css3.png": "/kmg-portfolio.com/static/media/css3.5721a3928fe43de6baf8.png",
+    "index.html": "/kmg-portfolio.com/index.html",
+    "main.d70e8c06.css.map": "/kmg-portfolio.com/static/css/main.d70e8c06.css.map",
+    "main.be9325a5.js.map": "/kmg-portfolio.com/static/js/main.be9325a5.js.map"
   },
   "entrypoints": [
     "static/css/main.d70e8c06.css",
-    "static/js/main.8c8310d9.js"
+    "static/js/main.be9325a5.js"
   ]
 }
