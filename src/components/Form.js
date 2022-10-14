@@ -12,9 +12,11 @@ const Form = (props) => {
     
     if (NameRef.current.value.trim().length === 0) {
       alert('성함을 입력해주세요.');
+      NameRef.current.focus();
       return
     } else if (EmailRef.current.value.trim().length === 0) {
       alert('연락처를 입력해주세요.');
+      EmailRef.current.focus();
       return;
     }
 
@@ -27,6 +29,9 @@ const Form = (props) => {
     props.onAddContact(contact);
 
     alert('제출 되었습니다!');
+    NameRef.current.disabled=true;
+    EmailRef.current.disabled=true;
+    TextRef.current.disabled=true;
     document.querySelector('.smbtn').classList.add('btn-light');
     document.querySelector('.smbtn').disabled= true;
   }
