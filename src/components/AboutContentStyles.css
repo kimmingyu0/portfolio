@@ -12,7 +12,7 @@
 .about .left {
   text-align: center;
   padding: 1rem;
-  max-width: 600px;
+  max-width: 700px;
   animation: leftfadein 2s;
 }
 
@@ -30,7 +30,8 @@
 }
 
 .about .right{
-    max-width: 800px;
+    max-width: 700px;
+    padding-left: 100px;
     animation: rightfadein 2s;
 }
 
@@ -56,15 +57,24 @@
     position: relative;
     align-items: center;
     text-align: center;
+    max-width: 600px;
 }
 
 .img{
-    max-width: 200px;
+    max-width: 170px;
 }
 
+@media screen and (max-width:1280px){
+  .about .right{
+    padding-left: 16px;
+  }
+}
 @media screen and (max-width:640px) {
   .img{
     width: 100px;
+  }
+  .about .left p {
+    font-size: 1.16em;
   }
 }
 

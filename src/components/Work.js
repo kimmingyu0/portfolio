@@ -12,6 +12,7 @@ const Work = (props) => {
               key={idx}
               imgsrc={val.imgsrc}
               title={val.title}
+              type={val.type}
               text={val.text}
               view={val.view}
               source={val.source}

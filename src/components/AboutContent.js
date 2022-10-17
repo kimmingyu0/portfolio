@@ -6,6 +6,7 @@ import REACT from "../assets/react.png";
 import HTML from "../assets/html.png";
 import CSS from "../assets/css3.png"
 import JAVASCRIPT from "../assets/js.png"
+import JQUERY from "../assets/jquery.png"
 import JAVA from "../assets/java.png"
 const AboutContent = () => {
   return (
@@ -13,7 +14,8 @@ const AboutContent = () => {
       <div className="left">
         <h1>Who Am I?</h1>
         <p>대구 프론트엔드 개발자 김민규입니다.<br></br>
-        웹개발을 주력으로 하고 있고, 앱개발에도 관심이 많습니다.
+        웹 개발을 주력으로 하고 각종 오픈소스,<br></br>
+        라이브러리, 프레임워크 활용이 가능합니다.<br></br>
         </p>
         <Link to="/contact">
           <button className="btn">Contact</button>
@@ -39,6 +41,11 @@ const AboutContent = () => {
           </div>
           <div className="img-stack">
             <img src={JAVASCRIPT} 
+            className="img" 
+            alt="true" />
+          </div>
+          <div className="img-stack">
+            <img src={JQUERY} 
             className="img" 
             alt="true" />
           </div>
