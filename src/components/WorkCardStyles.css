@@ -51,9 +51,9 @@
   }
   
   .project-card:nth-child(2n+1){
-    animation: rightfadein 2s;
+    animation: rightfadein 2s ease-in-out;
   }
   .project-card:nth-child(2n){
-    animation: leftfadein 2s;
+    animation: leftfadein 2s ease-in-out;
   }
 }

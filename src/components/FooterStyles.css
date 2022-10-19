@@ -54,8 +54,4 @@ p {
   .footer-container {
     grid-template-columns: 1fr;
   }
-
-  p {
-    font-size: 1.1rem;
-  }
 }

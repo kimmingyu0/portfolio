@@ -18,7 +18,9 @@
 
 @keyframes leftfadein{
   0% {
-    transform: translateX(-100%);
+    transform: translateX(-250%);
+    animation-timing-function: ease-in-out;
+
   }
   100% {
     transform: translateX(0);
@@ -37,7 +39,8 @@
 
 @keyframes rightfadein{
   0% {
-    transform: translateX(100%);
+    transform: translateX(250%);
+    animation-timing-function: ease-in-out;
   }
   100% {
     transform: translateX(0);
