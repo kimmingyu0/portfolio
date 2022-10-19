@@ -13,6 +13,7 @@
   text-align: center;
   padding: 1rem;
   max-width: 700px;
+  margin-right: 30px;
   animation: leftfadein 2s;
 }
 
@@ -29,11 +30,13 @@
 
 .about .left p {
   margin: 1.2rem 0;
+  font-size: 1.4em;
 }
 
 .about .right{
     max-width: 700px;
     padding-left: 100px;
+    margin-left: 30px;
     animation: rightfadein 2s;
 }
 
@@ -70,6 +73,10 @@
 @media screen and (max-width:1280px){
   .about .right{
     padding-left: 16px;
+    margin-left: 0;
+  }
+  .about .left{
+    margin-right: 0;
   }
 }
 @media screen and (max-width:640px) {
@@ -78,6 +85,12 @@
   }
   .about .left p {
     font-size: 1.16em;
+  }
+  .about .left {
+    animation: leftfadein 1s;
+  }
+  .about .right {
+    animation: rightfadein 1s;
   }
 }
 
