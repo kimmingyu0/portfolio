@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.c83be9c6.css",
-    "main.js": "/static/js/main.cb72989c.js",
+    "main.js": "/static/js/main.6e9a99b8.js",
+    "static/media/MovieInfo.png": "/static/media/MovieInfo.3fa4b7dc1b5066586e96.png",
     "static/media/ChromeApp.png": "/static/media/ChromeApp.1d108c975c86845238ad.png",
     "static/media/COSVIEW.png": "/static/media/COSVIEW.a25535b64358c5586f7f.png",
     "static/media/PortFolio.png": "/static/media/PortFolio.347c5c98c39e1ee907d4.png",
-    "static/media/MovieRanking.png": "/static/media/MovieRanking.56ecde6cd0006bdf99bb.png",
     "static/media/intro-bg.jpg": "/static/media/intro-bg.cf2364827d8b8a98642e.jpg",
     "static/media/react.png": "/static/media/react.7aa3e7438534a7686f56.png",
     "static/media/jquery.png": "/static/media/jquery.678d432fe21278200419.png",
@@ -13,10 +13,10 @@
     "static/media/css3.png": "/static/media/css3.5721a3928fe43de6baf8.png",
     "index.html": "/index.html",
     "main.c83be9c6.css.map": "/static/css/main.c83be9c6.css.map",
-    "main.cb72989c.js.map": "/static/js/main.cb72989c.js.map"
+    "main.6e9a99b8.js.map": "/static/js/main.6e9a99b8.js.map"
   },
   "entrypoints": [
     "static/css/main.c83be9c6.css",
-    "static/js/main.cb72989c.js"
+    "static/js/main.6e9a99b8.js"
   ]
 }
