@@ -4,14 +4,16 @@ import {
   FaHome,
   FaPhone,
   FaMailBulk,
-  FaFacebook,
+  FaComments,
   FaGithub,
-  FaTwitter,
 } from "react-icons/fa";
 
 const Footer = () => {
   const gitIconHandler = () => {
-    window.location.href="https://github.com/kimmingyu0"
+    window.open("https://github.com/kimmingyu0");
+  }
+  const commentsIconHandler = () => {
+    window.open("https://open.kakao.com/me/kmg97");
   }
   return (
     <div className="footer">
@@ -46,13 +48,10 @@ const Footer = () => {
           <h4>방문해주셔서 감사합니다.</h4>
           <p>유저에게 편안함을 선사하는 개발자가 되고픈 김민규입니다.</p>
           <div className="social">
-            <FaFacebook
+            <FaComments
               size={30}
-              style={{ color: "#fff", marginRight: "1rem" }}
-            />
-            <FaTwitter
-              size={30}
-              style={{ color: "#fff", marginRight: "1rem" }}
+              style={{ color: "#fff", marginRight: "1rem", cursor:"pointer" }}
+              onClick={commentsIconHandler}
             />
             <FaGithub
               size={30}
