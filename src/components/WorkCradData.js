@@ -22,8 +22,8 @@ const ProjectCardData = [
   {
     imgsrc: pro3,
     type:"PC, MOBILE",
-    title: "MovieInformation (개인)",
-    text: "처음 접하는 리액트 프로젝트로 RestAPI를 활용하여 영화 정보를 확인 할 수 있는 웹페이지 입니다. 현재 CSS 수정 작업중입니다.",
+    title: "MovieInfo (개인)",
+    text: "처음 접하는 리액트 프로젝트로 RestAPI를 활용하여 영화 정보를 확인 할 수 있는 웹페이지 입니다.",
     view: "https://kimmingyu0.github.io/MovieRanking/",
     source: "https://github.com/kimmingyu0/MovieRanking/"
   },
