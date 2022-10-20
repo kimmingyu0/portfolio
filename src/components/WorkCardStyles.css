@@ -28,7 +28,12 @@
     padding:1rem 0;
 }
 
-.pro-datail p {
+.pro-details h3{
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.pro-datails p {
     padding-bottom: 1rem ;
     font-size: 1.1rem;
     text-align: justify;
@@ -42,7 +47,7 @@
 .pro-btns .btn{
     padding:0.5rem 1rem;
 }
-@media screen and (max-width: 1090px){
+@media screen and (max-width: 1125px){
   .project-container {
     max-width: 90%;
     grid-template-columns: repeat(2,2fr);

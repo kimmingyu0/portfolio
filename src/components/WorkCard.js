@@ -7,7 +7,8 @@ const WorkCard = (props) => {
       <img src={props.imgsrc} alt="image" />
       <h2 className="project-title">{props.title}</h2>
       <div className="pro-details">
-        <h4>최적화 : {props.type}</h4>
+        <h3>최적화 : {props.type}</h3>
+        <h3>참여 : {props.part}</h3>
         <p>{props.text}</p>
         <div className="pro-btns">
           <a href={props.view} target="_blank" className="btn">

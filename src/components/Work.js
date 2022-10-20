@@ -13,6 +13,7 @@ const Work = (props) => {
               imgsrc={val.imgsrc}
               title={val.title}
               type={val.type}
+              part={val.part}
               text={val.text}
               view={val.view}
               source={val.source}
