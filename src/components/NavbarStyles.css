@@ -27,6 +27,10 @@
   font-weight: 500;
 }
 
+.clicked{
+  border-bottom: 2px solid white;
+}
+
 .hamburger {
   display: none;
   cursor: pointer;
@@ -58,7 +62,12 @@
   .nav-menu li a {
     font-size: 2rem;
   }
+  .clicked{
+    border-bottom: 4px solid white;
+  }
   .hamburger{
     display: initial;
   }
 }
+
+
