@@ -6,6 +6,7 @@ import Project from "./routes/Project";
 import Contact from "./routes/Contact";
 
 import { Route, Routes, Navigate } from "react-router-dom";
+import NotFound from "./routes/NotFound";
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/project" element={<Project />} />
         <Route path="/contact" element ={<Contact onAddContact={addContactHandler}/>} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );
