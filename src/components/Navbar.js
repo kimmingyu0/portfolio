@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./NavbarStyles.css";
 
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -23,21 +23,21 @@ const Navbar = () => {
    
   return (
     <div className={color ? "header header-bg":"header"}>
-      <Link to="/">
+      <NavLink to="/Home">
         <h1>KMG's Portfolio</h1>
-      </Link>
+      </NavLink>
       <ul className={click ? "nav-menu active" : "nav-menu"}>
         <li>
-          <Link to="/">Home</Link>
+          <NavLink to="/Home" className={({ isActive }) => (isActive ? "clicked" : "")}>Home</NavLink>
         </li>
         <li>
-          <Link to="/About">About</Link>
+          <NavLink to="/About" className={({ isActive }) => (isActive ? "clicked" : "")}>About</NavLink>
         </li>
         <li>
-          <Link to="/Project">Project</Link>
+          <NavLink to="/Project" className={({ isActive }) => (isActive ? "clicked" : "")}>Project</NavLink>
         </li>
         <li>
-          <Link to="/Contact">Contact</Link>
+          <NavLink to="/Contact" className={({ isActive }) => (isActive ? "clicked" : "")}>Contact</NavLink>
         </li>
       </ul>
       <div className="hamburger" onClick={handleClick}>
