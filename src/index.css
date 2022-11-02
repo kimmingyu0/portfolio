@@ -64,3 +64,11 @@ ul {
 .NotFoundPage button {
   margin-top: 5%;
 }
+
+.centered {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
