@@ -3,7 +3,10 @@ import Navbar from "../components/Navbar";
 import HeroImg2 from "../components/HeroImg2";
 import Footer from "../components/Footer";
 import Form from "../components/Form";
+import { useTitle } from "../hooks/UpdateTitle";
 const Contact = (props) => {
+  useTitle('Contact');
+  
   return (
     <div>
       <Navbar />

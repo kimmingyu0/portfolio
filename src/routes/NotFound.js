@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+import { useTitle } from "../hooks/UpdateTitle";
 
 const NotFound = () => {
+  useTitle('NotFound');
+  
   return (
     <div className="NotFoundPage">
       <div>

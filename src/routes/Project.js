@@ -5,8 +5,11 @@ import HeroImg2 from "../components/HeroImg2";
 import Footer from "../components/Footer";
 // import PricingCard from "../components/PricingCard";
 import Work from "../components/Work";
+import { useTitle } from "../hooks/UpdateTitle";
 
 const Project = () => {
+  useTitle('Project');
+  
   return (
     <div>
       <Navbar />

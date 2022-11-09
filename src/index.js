@@ -3,7 +3,7 @@ import "./index.css";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import {createRoot} from 'react-dom/client';
-import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTop from "./hooks/ScrollToTop";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
