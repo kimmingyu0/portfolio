@@ -23,21 +23,21 @@ const Navbar = () => {
    
   return (
     <div className={color ? "header header-bg":"header"}>
-      <NavLink to="/Home">
+      <NavLink to="/home">
         <h1>KMG's Portfolio</h1>
       </NavLink>
       <ul className={click ? "nav-menu active" : "nav-menu"}>
         <li>
-          <NavLink to="/Home" className={({ isActive }) => (isActive ? "clicked" : "")}>Home</NavLink>
+          <NavLink to="/home" className={({ isActive }) => (isActive ? "clicked" : "")}>Home</NavLink>
         </li>
         <li>
-          <NavLink to="/About" className={({ isActive }) => (isActive ? "clicked" : "")}>About</NavLink>
+          <NavLink to="/about" className={({ isActive }) => (isActive ? "clicked" : "")}>About</NavLink>
         </li>
         <li>
-          <NavLink to="/Project" className={({ isActive }) => (isActive ? "clicked" : "")}>Project</NavLink>
+          <NavLink to="/project" className={({ isActive }) => (isActive ? "clicked" : "")}>Project</NavLink>
         </li>
         <li>
-          <NavLink to="/Contact" className={({ isActive }) => (isActive ? "clicked" : "")}>Contact</NavLink>
+          <NavLink to="/contact" className={({ isActive }) => (isActive ? "clicked" : "")}>Contact</NavLink>
         </li>
       </ul>
       <div className="hamburger" onClick={handleClick}>
