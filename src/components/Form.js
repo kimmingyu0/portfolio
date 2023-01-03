@@ -3,6 +3,10 @@ import "./FormStyles.css";
 import React, { useRef } from "react";
 
 const Form = (props) => {
+  const XSSFilter =(content)=>{
+    return content.replace(/</g,"&lt;").replace(/>/g, "&gt;");
+  } // 사용자가 script 문을 작성할 경우를 대비하여 추가 
+
   const NameRef = useRef("");
   const EmailRef = useRef("");
   const TextRef = useRef("");
@@ -21,9 +25,9 @@ const Form = (props) => {
     }
 
     const contact = {
-      name: NameRef.current.value,
-      email: EmailRef.current.value,
-      text: TextRef.current.value,
+      name: XSSFilter(NameRef.current.value),
+      email: XSSFilter(EmailRef.current.value),
+      text: XSSFilter(TextRef.current.value),
       time: new Date().toLocaleString(),
     };
 
